@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impact-Effort Matrix</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <h1>Impact-Effort Matrix</h1>
+    </header>
+
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <h2>Task Configuration</h2>
+            <div class="input-group">
+                <label for="task-name">Task Name:</label>
+                <input type="text" id="task-name" placeholder="Enter the task name">
+            </div>
+            <div class="input-group">
+                <label for="reach">Reach:</label>
+                <input type="range" id="reach" min="0" max="5" value="1">
+                <input type="number" id="reach-value" value="1" min="0" max="5">
+            </div>
+            <div class="input-group">
+                <label for="impact">Impact:</label>
+                <input type="range" id="impact" min="1" max="10" value="1">
+                <input type="number" id="impact-value" value="1" min="1" max="10">
+            </div>
+            <div class="input-group">
+                <label for="confidence">Confidence:</label>
+                <input type="range" id="confidence" min="0" max="5" step="1" value="1">
+                <input type="number" id="confidence-value" value="1" min="0" max="5" step="1">
+            </div>
+            <div class="input-group">
+                <label for="effort">Effort:</label>
+                <input type="range" id="effort" min="1" max="10" value="1">
+                <input type="number" id="effort-value" value="1" min="1" max="10">
+            </div>
+            <div class="button-group">
+                <button id="save-task">Save</button>
+                <button id="edit-task">Edit</button>
+                <button id="delete-task">Delete</button>
+            </div>
+        </aside>
+
+        <!-- Matrix Area -->
+        <main class="matrix">
+            <div class="grid">
+                <div class="section quick-wins">
+                    <h3>Quick Wins</h3>
+                    <div class="tasks"></div>
+                </div>
+                <div class="section big-bets">
+                    <h3>Big Bets</h3>
+                    <div class="tasks"></div>
+                </div>
+                <div class="section money-pit">
+                    <h3>Money Pit</h3>
+                    <div class="tasks"></div>
+                </div>
+                <div class="section fill-ins">
+                    <h3>Fill-ins</h3>
+                    <div class="tasks"></div>
+                </div>
+            </div>
+            <div class="filter">
+                <label for="filter-section">Filter by section:</label>
+                <select id="filter-section">
+                    <option value="all">Show All</option>
+                    <option value="big-bets">Big Bets</option>
+                    <option value="quick-wins">Quick Wins</option>
+                    <option value="money-pit">Money Pit</option>
+                    <option value="fill-ins">Fill-ins</option>
+                </select>
+            </div>
+            <div class="legend">
+                <p id="legend-message"></p>
+            </div>
+        </main>
+    </div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>

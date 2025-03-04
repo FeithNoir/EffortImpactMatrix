@@ -1,0 +1,165 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 10px; /* 1rem = 10px */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-size: 1.6rem;
+}
+
+/* Header */
+.header {
+    background-color: #4285f4;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+}
+
+/* Contenedor principal */
+.container {
+    display: grid;
+    grid-template-columns: 25rem 1fr;
+    gap: 2rem;
+    padding: 2rem;
+    flex: 1;
+}
+
+/* Barra lateral */
+.sidebar {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.input-group {
+    margin-bottom: 1.5rem;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.input-group input[type="range"],
+.input-group input[type="number"] {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+}
+
+.button-group {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.button-group button {
+    flex: 1;
+    padding: 1rem;
+    background-color: #4285f4;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.button-group button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Área de la matriz */
+.matrix {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.section {
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.section h3 {
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.tasks {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.pill {
+    padding: 0.5rem 1rem;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.pill:hover {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+/* Colores de las secciones */
+.big-bets {
+    background-color: #34a853;
+}
+
+.quick-wins {
+    background-color: #fbbc05;
+}
+
+.money-pit {
+    background-color: #ea4335;
+}
+
+.fill-ins {
+    background-color: #4285f4;
+}
+
+/* Filtro y leyenda */
+.filter {
+    margin-top: 2rem;
+}
+
+.filter label {
+    font-weight: bold;
+}
+
+.filter select {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+}
+
+.legend {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.legend p {
+    font-weight: bold;
+}
